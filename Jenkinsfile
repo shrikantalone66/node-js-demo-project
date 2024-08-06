@@ -6,7 +6,9 @@ pipeline {
         LOCAL_DESTINATION_PATH_DEVELOPMENT = 'C:\\sourcecode\\development'
         LOCAL_DESTINATION_PATH_TEST = 'C:\\sourcecode\\test'
         LOCAL_DESTINATION_PATH_UAT = 'C:\\sourcecode\\uat'
-        LOCAL_DESTINATION_PATH_MAIN = 'C://sourcecode//main'
+        LOCAL_DESTINATION_PATH_MAIN = 'C:\\sourcecode\\main'
+	REMOTE_HOST = '192.168.105.151'
+        REMOTE_USERNAME = 'shrikant alone'
     }
 
     stages {
@@ -18,7 +20,7 @@ pipeline {
         }
 	
 	
-	
+	def storagePath
         stage('Deploy') {
             steps {
                 script {
@@ -37,7 +39,8 @@ pipeline {
                             break
                         case 'main':
                             echo 'main branch deploying...'
-                            sh "cp -r * ${env.LOCAL_DESTINATION_PATH_MAIN}"
+                           //sh "cp -r * ${env.LOCAL_DESTINATION_PATH_MAIN}"
+			     storagePath =  sh "scp -r * ${REMOTE_USERNAME}@${REMOTE_HOST}:${LOCAL_DESTINATION_PATH_MAIN}/"
                             break
                         default:
                             echo "No deployment configured for branch ${env.BRANCH_NAME}"
