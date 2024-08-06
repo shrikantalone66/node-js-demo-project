@@ -3,10 +3,10 @@ pipeline {
 
     environment {
 	BRANCH_NAME = 'main'
-        LOCAL_DESTINATION_PATH_DEVELOPMENT = 'C:\\sourcecode\\development'
-        LOCAL_DESTINATION_PATH_TEST = 'C:\\sourcecode\\test'
-        LOCAL_DESTINATION_PATH_UAT = 'C:\\sourcecode\\uat'
-        LOCAL_DESTINATION_PATH_MAIN = 'C:\\sourcecode\\main'
+        LOCAL_DESTINATION_PATH_DEVELOPMENT = '/sourcecode/development/'
+        LOCAL_DESTINATION_PATH_TEST = '/sourcecode/test/'
+        LOCAL_DESTINATION_PATH_UAT = '/sourcecode/uat/'
+        LOCAL_DESTINATION_PATH_MAIN = '/sourcecode/main/'
 	//REMOTE_HOST = '192.168.105.151'
         //REMOTE_USERNAME = 'shrikant alone'
 
