@@ -7,8 +7,12 @@ pipeline {
         LOCAL_DESTINATION_PATH_TEST = 'C:\\sourcecode\\test'
         LOCAL_DESTINATION_PATH_UAT = 'C:\\sourcecode\\uat'
         LOCAL_DESTINATION_PATH_MAIN = 'C:\\sourcecode\\main'
-	REMOTE_HOST = '192.168.105.151'
-        REMOTE_USERNAME = 'shrikant alone'
+	//REMOTE_HOST = '192.168.105.151'
+        //REMOTE_USERNAME = 'shrikant alone'
+
+
+	REMOTE_HOST = '52.4.32.118'
+        REMOTE_USERNAME = 'root'
     }
 
     stages {
