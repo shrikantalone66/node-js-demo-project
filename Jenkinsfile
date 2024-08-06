@@ -20,10 +20,11 @@ pipeline {
         }
 	
 	
-	def storagePath
+	
         stage('Deploy') {
             steps {
                 script {
+		    def storagePath
                     switch (env.BRANCH_NAME) {
                         case 'Development':
                             echo 'Development branch deploying...'
