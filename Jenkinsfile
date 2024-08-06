@@ -6,7 +6,7 @@ pipeline {
         LOCAL_DESTINATION_PATH_DEVELOPMENT = 'C:\\sourcecode\\development'
         LOCAL_DESTINATION_PATH_TEST = 'C:\\sourcecode\\test'
         LOCAL_DESTINATION_PATH_UAT = 'C:\\sourcecode\\uat'
-        LOCAL_DESTINATION_PATH_MAIN = 'C:\\sourcecode\main'
+        LOCAL_DESTINATION_PATH_MAIN = 'C://sourcecode//main'
     }
 
     stages {
