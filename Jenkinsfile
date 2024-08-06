@@ -10,14 +10,14 @@ pipeline {
     }
 
     stages {
-	
-	
-	    stage('Checkout') {
-           steps {
+	        stage('Checkout') {
+            steps {
                 // Checkout the code from Git
-                git branch: "${BRANCH_NAME}" url: 'https://github.com/shrikantalone66/node-js-demo-project.git'
+                git branch: "${BRANCH_NAME}", credentialsId: 'gitlab', url: 'https://github.com/shrikantalone66/node-todo-cicd.git'
             }
         }
+	
+	
 	
         stage('Deploy') {
             steps {
