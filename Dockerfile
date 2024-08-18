@@ -6,5 +6,7 @@ RUN npm run test
 EXPOSE 8000
 CMD ["node","app.js"]
 //CMD ["node","app.js"] ","app.js"]
-//CMD ["node","app.js"]
+//CMD ["node","app.js.js"]
+//CMD ["node","app.js".js"]
+//CMD ["node","app.js"
 
